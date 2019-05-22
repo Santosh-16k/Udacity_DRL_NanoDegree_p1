@@ -24,7 +24,7 @@ When the agent is trained, following is the behavior
 
 ![Trained Agent](./assets/TrainedAgent.gif)
 
-###Graphs
+### Graphs
 
 A DQN with experience replay and fixed Q target was implemented, the environment is solved in 582 episodes
 
