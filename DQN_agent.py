@@ -63,8 +63,6 @@ class Agent():
         # For double DQN
         Q_targets_next = np.argmax(self.qnetwork_local(next_states).detach(),axis=-1).unsqueeze(1)
         Q_targets_next = self.qnetwork_target(next_states).gather(1, Q_targets_next)
-
-        # For dueling DQN
         
         Q_targets = rewards + (gamma * Q_targets_next * (1 - dones))
         Q_expected = self.qnetwork_local(states).gather(1, actions)
