@@ -24,7 +24,7 @@ When the agent is trained, following is the behavior
 
 ![Trained Agent](./assets/TrainedAgent.gif)
 
-#Graphs
+###Graphs
 
 A DQN with experience replay and fixed Q target was implemented, the environment is solved in 582 episodes
 
@@ -33,3 +33,8 @@ A DQN with experience replay and fixed Q target was implemented, the environment
 A Double DQN algorithm with experience replay and fixed Q target was implemented, the environment is solved in 428 episodes
 
 ![Double DQN Agent](./assets/DoubleDQN.png)
+
+### Future work
+To improve performance try using the following:
+- Implement Dueling Q Network
+- Prioritized experience replay

@@ -1,3 +1,5 @@
+## README
+
 This repository contains codes related to navigating a robot. The aim is to collect yellow bananas in the environment and avoid the blue bananas.
 
 In order to use the repository, follow the steps:
@@ -11,3 +13,10 @@ In order to use the repository, follow the steps:
 4. DQN_agent.py contains code elements needed for the agent like experience replay, taking action in the environment, etc.
 5. model.py contains the neural network model architecture that is used to train the agent and inference from the trained one.
 6. checkpoint.pth contains trained model, use the notebook to load the model.
+
+### Information about the environment
+- The action space of the agent consists of 4 actions i.e move forward, move backward, turn left and turn right
+- The state space has 37 dimensions and contains agent's velocity along with ray-based perception of objects around agent's forward direction
+- A reward of +1 is given for collecting yellow banana and a reward of -1 is provided for collecting a blue banana
+
+The environment is considered solved when the agent scores an average of +13 over 100 consecutive episodes.
