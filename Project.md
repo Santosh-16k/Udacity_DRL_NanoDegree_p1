@@ -14,7 +14,7 @@ Parameters used in DQN algorithm:
     Starting epsilion: 1.0
     Ending epsilion: 0.1
     Epsilion decay rate: 0.999
-The envronment is considered as solved if the agent scores an average of 13 over 100 episodes.
+The environment is considered as solved if the agent scores an average of 13 over 100 episodes.
 
 Following is how an untrained agent performs in the Unity Environment
 
@@ -26,10 +26,10 @@ When the agent is trained, following is the behavior
 
 #Graphs
 
-A DQN with experience replay and fixed Q target was created, the environment is solved in 582 episodes
+A DQN with experience replay and fixed Q target was implemented, the environment is solved in 582 episodes
 
-![DQN Agent]("./assets/DQN.png")
+![DQN Agent](./assets/DQN.png)
 
-A DQN with experience replay and fixed Q target was created, the environment is solved in 428 episodes
+A Double DQN algorithm with experience replay and fixed Q target was implemented, the environment is solved in 428 episodes
 
-![Double DQN Agent]("./assets/DQN.png")
+![Double DQN Agent](./assets/DoubleDQN.png)
